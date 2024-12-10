@@ -1,4 +1,4 @@
-specVersion: 1.0.0
+specVersion: 1.1.0
 indexerHints:
   prune: auto
 schema:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 3914495
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.7
+      apiVersion: 0.0.9
       language: wasm/assemblyscript
       entities:
         - Assign
@@ -24,6 +24,8 @@ dataSources:
         - PunkBidWithdrawn
         - PunkBought
         - PunkNoLongerForSale
+        - PunkBoughtData
+        - PunkBoughtStats
       abis:
         - name: CryptoPunksMarket
           file: ./abis/CryptoPunksMarket.json
